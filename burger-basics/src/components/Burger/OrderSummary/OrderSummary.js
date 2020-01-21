@@ -1,6 +1,6 @@
 import React from 'react';
 
-import fragment from '../../../hoc/fragment';
+import Fragment from '../../../hoc/fragment';
 import Button from '../../UI/Button/Button';
 
 const orderSummary = ( props ) => {
@@ -13,7 +13,7 @@ const orderSummary = ( props ) => {
         } );
 
     return (
-        <fragment>
+        <Fragment>
             <h3>Your Order</h3>
             <p>A delicious burger with the following ingredients:</p>
             <ul>
@@ -23,7 +23,7 @@ const orderSummary = ( props ) => {
             <p>Continue to Checkout?</p>
             <Button btnType="Danger" clicked={props.purchaseCancelled}>CANCEL</Button>
             <Button btnType="Success" clicked={props.purchaseContinued}>CONTINUE</Button>
-        </fragment>
+        </Fragment>
     );
 };
 
